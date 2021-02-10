@@ -1,0 +1,12 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = bu örnek bir cümledir.
+1	bu	bu	PRON	Demons	Case=Nom|Number=Sing|Person=3|PronType=Dem	2	det	_	det
+2	örnek	örnek	NOUN	Noun	Case=Nom|Number=Sing|Person=3	4	nsubj	_	_
+3	bir	bir	NUM	ANum	NumType=Card	4	det	_	_
+4-5	cümledir	_	_	_	_	_	_	_	_
+4	cüm	cüm	NOUN	Noun	Case=Nom|Number=Sing|Person=3	0	root	_	_
+5	ledir	i	AUX	Zero	Aspect=Perf|Mood=Gen|Number=Sing|Person=3|Tense=Pres	4	cop	_	cop
+6	.	.	PUNCT	Punc	_	4	punct	_	_
+

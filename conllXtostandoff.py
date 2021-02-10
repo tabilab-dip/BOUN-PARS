@@ -86,7 +86,8 @@ def output(docnum, sentences):
             tokens = [('0', ROOT_STR, ROOT_STR)] + tokens
 
         for ID, form, POS in tokens:
-
+            if "-" in ID:
+                continue
             if prev_form is not None:
                 doctext = doctext + ' '
                 offset += 1
@@ -177,4 +178,12 @@ def process(text):
     else:
         return [[], []]
 
+
+#dbg:
+if __name__ == '__main__':
+    import sys
+    fname = sys.argv[1]
+    with open(fname, "r") as f:
+        text = f.read()
+    print(process(text))
 
